@@ -1,0 +1,14 @@
+.channel-container {
+    display: flex;
+    gap: 1rem;
+    background-color: black;
+    color: azure;
+    padding: 2rem;;
+}
+
+.channel-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
