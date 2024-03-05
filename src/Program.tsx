@@ -90,11 +90,6 @@ const Program = () => {
 
     const onOptionChangeHandler = async (event) => {
         setCategory(event.target.value);
-        console.log(
-            "User Selected Value - ",
-            event.target.value
-        );
-
       
     };
 

@@ -31,7 +31,7 @@ const AllChanels: React.FC = () => {
             <div className='channel-container'>
                 {/* Loopa genom den nya arrayen av objekt */}
                 {channelsData && channelsData.map((channel, index) => (
-                    <ChannelCard index={index} image={channel.image} name={channel.name} tagline={channel.tagline}/>
+                    <ChannelCard index={index} image={channel.image} name={channel.name} tagline={channel.tagline} live={channel.liveaudio}/>
                    
                 ))}
             </div>
