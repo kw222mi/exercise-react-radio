@@ -11,12 +11,16 @@ interface IChannelCardProps {
 const ChannelCard = (props:IChannelCardProps) => {
     return ( 
         <>
-        <div key={props.index} className='channel-card'>           
-            <img src={props.image} height={"60px"} width={"60px"}/>
-            <p> {props.name}</p>
-            <p>{props.tagline}</p>
-            <button>Live</button>
-
+        <div key={props.index} className='channel-card'>  
+            <div>         
+                <img src={props.image} className="channel-image"/>
+                <p className="channel-name"> {props.name}</p>
+                <p>{props.tagline}</p>
+            </div>
+            <div >
+                
+                <button>Live</button>
+            </div>
         </div>
         </>
      );

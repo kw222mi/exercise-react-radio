@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./Program.css"
+import ProgramCard from "./ProgramCard";
 
 interface IProgram {
     description:string,
@@ -47,11 +48,8 @@ const Program = () => {
             <div className='program-container'>
                 {/* Loopa genom den nya arrayen av objekt */}
                 {programs && programs.map((program, index) => (
-                    <div key={index} className='program-div'>
-                        
-                        <img src={program.programimage} height={"60px"} width={"60px"}/>
-                        <p> {program.name}</p>
-                    </div>
+                    <ProgramCard  id={program.id} image={program.programimage} name={program.name} tagline={program.description}/>
+                  
                 ))}
             </div>
         </>
