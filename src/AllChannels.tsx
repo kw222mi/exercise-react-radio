@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import "./allChannels.css"
 import {IChannel} from "./interfaces"
-
+import ChannelCard from './ChannelCard';
 
 
 const AllChanels: React.FC = () => {
@@ -17,7 +17,8 @@ const AllChanels: React.FC = () => {
                     id: channel.id,
                     image: channel.image,
                     siteurl: channel.siteurl,
-                    liveaudio: channel.liveaudio.url
+                    liveaudio: channel.liveaudio.url,
+                    tagline: channel.tagline
                 }));
                 // Uppdatera state med den nya arrayen av objekt
                 setChannelsData(channelsInfo);
@@ -30,11 +31,8 @@ const AllChanels: React.FC = () => {
             <div className='channel-container'>
                 {/* Loopa genom den nya arrayen av objekt */}
                 {channelsData && channelsData.map((channel, index) => (
-                    <div key={index} className='channel-div'>
-                        
-                        <img src={channel.image} height={"60px"} width={"60px"}/>
-                        <p> {channel.name}</p>
-                    </div>
+                    <ChannelCard index={index} image={channel.image} name={channel.name} tagline={channel.tagline}/>
+                   
                 ))}
             </div>
         </>

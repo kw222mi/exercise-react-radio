@@ -4,6 +4,7 @@ export interface IChannel{
     image: string,
     siteurl: string,
     liveaudio: string,
+    tagline:string,
     [key: string]: unknown
 
 }

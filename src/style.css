@@ -3,3 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    --basic-font: "Josefin Sans", sans-serif;
+}

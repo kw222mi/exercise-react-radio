@@ -1,0 +1,8 @@
+.channel-card {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: aliceblue;
+    font-family: var(--basic-font);
+
+}

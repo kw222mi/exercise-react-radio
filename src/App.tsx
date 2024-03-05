@@ -1,19 +1,19 @@
 import { Outlet } from "react-router-dom";
 import { Header } from "./Header";
 import { IRoute } from "./interfaces";
-import  LandingPage  from "./pages/LandingPage";
+
 
 export function App() {
   const links: IRoute[] = [
     {
       id: 1,
-      name: "Landing page",
+      name: "Program",
       path: "/",
     },
     {
       id: 2,
-      name: "Search Page",
-      path: "/search",
+      name: "Kanaler",
+      path: "/channel",
     },
   ];
 
@@ -25,13 +25,3 @@ export function App() {
   );
 }
 
-
-
-/*
-
-hämta alla kanaler:
-http://api.sr.se/api/v2/channels?format=json
-
-
-
-*/
