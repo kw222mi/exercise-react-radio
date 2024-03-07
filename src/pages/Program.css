@@ -1,0 +1,14 @@
+
+
+.program-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    background-color: black;
+    color: azure;
+    padding: 2rem;
+}
+
+label{
+    color:black;
+}

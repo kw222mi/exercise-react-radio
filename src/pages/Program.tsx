@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./Program.css"
-import ProgramCard from "./ProgramCard";
+import ProgramCard from "../ProgramCard";
 
 interface IProgram {
     description:string,
@@ -53,6 +53,8 @@ const Program = () => {
     }
 
     useEffect (() => {
+       
+        
     async function fetchData() {
         try {
             const programInfo = await fetchPrograms("http://api.sr.se/api/v2/programs?format=json");
@@ -99,6 +101,8 @@ const Program = () => {
             <div>
                 <label for="category" >Kategori</label>
                 <select id="category" name="category" onChange={onOptionChangeHandler}>
+                    <option selected disabled >Välj kategori</option>
+
                     {categories && categories.map((category, index) => (
                         <option key={category.id} value={category.id}>{category.name}</option>
                     ) )}
@@ -108,7 +112,7 @@ const Program = () => {
             <div className='program-container'>
                 {/* Loopa genom den nya arrayen av objekt */}
                 {programs && programs.map((program, index) => (
-                    <ProgramCard  key={program.id} id={program.id} image={program.programimage} name={program.name} tagline={program.description}/>
+                    <ProgramCard  key={program.id} id={program.id} image={program.programimage} name={program.name} description={program.description}/>
                   
                 ))}
             </div>

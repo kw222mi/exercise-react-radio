@@ -1,0 +1,23 @@
+.episode-card {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: aliceblue;
+    font-family: var(--basic-font);
+    height: 450px;
+    margin-bottom: 2rem;
+    justify-content: space-between;
+
+
+}
+
+.episode-image {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 0.5rem;
+}
+
+.episode-name {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}

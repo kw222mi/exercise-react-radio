@@ -7,14 +7,20 @@ export function App() {
   const links: IRoute[] = [
     {
       id: 1,
-      name: "Program",
+      name: "Hem",
       path: "/",
     },
     {
       id: 2,
+      name: "Program",
+      path: "/program",
+    },
+    {
+      id: 3,
       name: "Kanaler",
       path: "/channel",
     },
+   
   ];
 
   return (

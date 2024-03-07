@@ -1,10 +1,11 @@
-import Program from "../Program";
+import NewEpisodes from "../NewEpisodes";
+import Program from "./Program";
 
 const LandingPage = () => {
     return ( 
          <>
-   
-        <Program/>
+          
+        <NewEpisodes />
   </>
      );
 }
